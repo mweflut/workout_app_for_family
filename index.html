@@ -1,69 +1,133 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Privacy Policy – Workout App (Family)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Verhindert Indexierung durch Suchmaschinen -->
-  <meta name="robots" content="noindex,nofollow">
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+  <title>Privacy Policy – Workout App (Private Family Use)</title>
+  <meta name="description" content="Privacy Policy for the Workout App (Private Family Use)" />
   <style>
-    body { max-width: 800px; margin: 2rem auto; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 0 1rem; }
-    h1,h2 { line-height: 1.3; }
-    code { background: #f2f2f2; padding: 0 .25rem; border-radius: 4px; }
-    footer { margin-top: 3rem; font-size: 0.9rem; color: #555; }
+    :root { color-scheme: light dark; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 2rem 1rem;
+      line-height: 1.6;
+    }
+    main { max-width: 820px; margin: 0 auto; }
+    h1, h2 { line-height: 1.25; }
+    h1 { font-size: 1.9rem; margin-bottom: 0.25rem; }
+    .muted { color: #6b7280; font-size: 0.95rem; }
+    section { margin: 1.25rem 0; }
+    ul { padding-left: 1.25rem; }
+    footer { margin-top: 2rem; font-size: 0.95rem; color: #6b7280; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy – Workout App (Private Family Use)</h1>
-  <p>Last updated: <strong>2025-09-23</strong></p>
+<main>
+  <header>
+    <h1>Privacy Policy – Workout App (Private Family Use)</h1>
+    <p class="muted">Last updated:
+      <time datetime="2025-09-23">2025-09-23</time>
+    </p>
+  </header>
 
-  <h2>1. Controller & Contact</h2>
-  <p>Responsible: <strong>Maximilian Weuthen</strong><br>
-     Contact: <a href="mailto:[deine@email.de]">m.weuth@web.de</a></p>
+  <section id="controller-contact">
+    <h2>1. Controller &amp; Contact</h2>
+    <p>
+      Controller: <strong>Maximilian Weuthen</strong><br />
+      Contact: <a href="mailto:m.weuth@web.de">m.weuth@web.de</a>
+    </p>
+  </section>
 
-  <h2>2. Data We Collect</h2>
-  <ul>
-    <li><strong>Account data:</strong> email (via Supabase authentication).</li>
-    <li><strong>Workout data:</strong> exercises, sets/reps, duration, notes, progress.</li>
-    <li><strong>Uploads:</strong> photos/screenshots you add to your workouts.</li>
-  </ul>
+  <section id="personal-data">
+    <h2>2. Personal Data We Process</h2>
+    <ul>
+      <li><strong>Account data:</strong> email (Supabase authentication).</li>
+      <li><strong>Profile data:</strong> <code>display_name</code>, <code>avatar_url</code> (profile picture).</li>
+      <li><strong>Workout data:</strong> program/type, week/unit, duration/time, reps, notes, progress, timestamps.</li>
+      <li><strong>Uploads (optional):</strong> photos/screenshots you attach to workouts.</li>
+      <li><strong>Device permissions:</strong> camera and photo library are requested only to take or select photos for uploads.</li>
+    </ul>
+  </section>
 
-  <h2>3. Purpose of Processing</h2>
-  <ul>
-    <li>Provide secure login and user accounts.</li>
-    <li>Store and display workout progress.</li>
-    <li>Allow optional uploads (photos/screenshots) for personal tracking.</li>
-  </ul>
+  <section id="purposes-legal-bases">
+    <h2>3. Purposes &amp; Legal Bases</h2>
+    <ul>
+      <li><strong>Account &amp; sign-in; store and show your workouts</strong> – <em>performance of a contract</em> (Art. 6(1)(b) GDPR).</li>
+      <li><strong>Family compare/leaderboard view</strong> (showing display name, avatar and aggregated progress to other family members you share with) – <em>legitimate interests</em> (Art. 6(1)(f) GDPR). Our interest: enable voluntary comparison and motivation within your family group. You can opt out by not using the feature or by removing your profile data.</li>
+      <li><strong>Photo/Screenshot uploads</strong> – <em>consent</em> (Art. 6(1)(a) GDPR). You can withdraw consent anytime by deleting the uploads.</li>
+    </ul>
+  </section>
 
-  <h2>4. Legal Basis</h2>
-  <p>Legitimate interest and performance of a contract with users (Art. 6(1)(b)(f) GDPR).</p>
+  <section id="storage-processing">
+    <h2>4. Storage &amp; Processing</h2>
+    <p>
+      We use <strong>Supabase</strong> (managed Postgres, authentication, and object storage) as our processor.<br />
+      <strong>Region:</strong> eu-central-1 (Frankfurt).<br />
+      Data is encrypted in transit (TLS) and at rest by our provider. Access is restricted to authenticated users and protected by role-based rules.
+    </p>
+  </section>
 
-  <h2>5. Storage & Processing</h2>
-  <p>Data is stored with <strong>Supabase</strong> (managed Postgres & storage). 
-     Depending on configuration, data may be processed in Germany. 
-     We use security rules/auth to restrict access to your own data.</p>
+  <section id="sharing-visibility">
+    <h2>5. Sharing &amp; Visibility</h2>
+    <p>
+      We do <strong>not</strong> sell data and do not share it with third parties for their own purposes.
+      Within the app, your <strong>display name, avatar and aggregated progress</strong> may be visible to other signed-in members of your private family group in the <em>Compare</em> view. All other workout details remain private to your account.
+    </p>
+  </section>
 
-  <h2>6. Sharing</h2>
-  <p>No data is sold or shared with third parties. Within the app, data is only visible to the signed-in user 
-     (or explicitly shared within the family if you use sharing features).</p>
+  <section id="international-transfers">
+    <h2>6. International Transfers</h2>
+    <p>
+      If processing involves subprocessors outside the EEA, transfers rely on <strong>Standard Contractual Clauses (SCCs)</strong> and additional safeguards. Details available on request.
+    </p>
+  </section>
 
-  <h2>7. Retention</h2>
-  <p>We retain data while your account exists. You can request deletion of your account and associated data at any time.</p>
+  <section id="retention-deletion">
+    <h2>7. Retention &amp; Deletion</h2>
+    <p>
+      We keep data while your account exists. You can start deletion in-app: <em>Settings → Delete account</em>.<br />
+      When you request deletion, your account is <strong>scheduled for deletion after 30 days</strong>. If you sign in again within 30 days, the deletion is cancelled. After 30 days without sign-in, the account and associated data are deleted.
+    </p>
+  </section>
 
-  <h2>8. Your Rights (GDPR)</h2>
-  <ul>
-    <li>Access, rectification, deletion, restriction, portability, and objection.</li>
-    <li>You can lodge a complaint with your local supervisory authority.</li>
-  </ul>
+  <section id="rights">
+    <h2>8. Your Rights (GDPR)</h2>
+    <p>
+      You have the right to <strong>access, rectification, erasure, restriction, portability, and objection</strong>.
+      You can lodge a complaint with your local supervisory authority.
+      To exercise rights, email <a href="mailto:m.weuth@web.de">m.weuth@web.de</a> or use the in-app settings.
+    </p>
+  </section>
 
-  <h2>9. Children</h2>
-  <p>The app is intended for private family use. If minors use the app, a parent/guardian should manage the account.</p>
+  <section id="children">
+    <h2>9. Children</h2>
+    <p>
+      The app is intended for private family use. If minors use the app, a parent/guardian should manage the account. We do not process special categories of data.
+    </p>
+  </section>
 
-  <h2>10. Changes</h2>
-  <p>We may update this policy. The latest version is always available on this page.</p>
+  <section id="security">
+    <h2>10. Security</h2>
+    <p>
+      We apply technical and organizational measures including TLS, access controls, least-privilege roles, and encrypted storage by our provider. We do not use advertising or analytics SDKs.
+    </p>
+  </section>
+
+  <section id="changes">
+    <h2>11. Changes</h2>
+    <p>
+      We may update this policy. The latest version is available on this page.
+    </p>
+  </section>
 
   <footer>
-    © 2025 Maximilian Weuthen
+    &copy; 2025 Maximilian Weuthen
   </footer>
+</main>
 </body>
 </html>
